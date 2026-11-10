@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frida Manager — iOS repo</title>
+<style>
+  :root{ color-scheme: light dark;
+    --bg:#0b0d10; --fg:#eef0f3; --muted:#99a0aa; --card:#161a21; --border:#272d37; --accent:#3b82f6; }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f7f9; --fg:#14171c; --muted:#656c76; --card:#ffffff; --border:#e5e8ec; } }
+  *{ box-sizing:border-box; }
+  body{ font:16px/1.55 -apple-system,system-ui,sans-serif; max-width:600px; margin:0 auto;
+    padding:2.2rem 1.15rem; color:var(--fg); background:var(--bg); -webkit-text-size-adjust:100%; }
+  header{ display:flex; align-items:center; gap:.9rem; margin-bottom:.3rem; }
+  .app-icon{ width:62px; height:62px; border-radius:15px; box-shadow:0 3px 12px rgba(0,0,0,.28); flex:none; }
+  h1{ font-size:1.55rem; margin:0; letter-spacing:-.01em; }
+  .sub{ color:var(--muted); margin:.9rem 0 0; }
+  .grid{ display:grid; grid-template-columns:1fr 1fr; gap:.7rem; margin:1.4rem 0 1.6rem; }
+  .card{ display:flex; align-items:center; gap:.7rem; padding:.8rem .9rem; border-radius:14px;
+    background:var(--card); border:1px solid var(--border); text-decoration:none; color:var(--fg);
+    font-weight:600; transition:transform .08s ease, border-color .15s ease; }
+  .card:hover{ border-color:var(--accent); }
+  .card:active{ transform:scale(.97); }
+  .card svg{ width:38px; height:38px; flex:none; }
+  .manual{ color:var(--muted); font-size:.93rem; margin:0 0 .55rem; }
+  .url-row{ display:flex; gap:.5rem; }
+  #src{ flex:1; min-width:0; background:var(--card); border:1px solid var(--border); padding:.7rem .8rem;
+    border-radius:11px; font-family:ui-monospace,Menlo,monospace; font-size:.85rem; word-break:break-all; color:var(--fg); }
+  #copy{ border:1px solid var(--border); background:var(--card); color:var(--fg); border-radius:11px;
+    padding:0 1rem; font-weight:600; font-size:.9rem; cursor:pointer; flex:none; }
+  #copy:active{ transform:scale(.96); }
+  footer{ color:var(--muted); font-size:.9rem; margin-top:1.7rem; }
+  a{ color:var(--accent); }
+</style>
+
+<header>
+  <img class="app-icon" src="icon.png" alt="" onerror="this.style.display='none'">
+  <div>
+    <h1>Frida Manager</h1>
+  </div>
+</header>
+<p class="sub">iOS package repo — tap your package manager to add this source.</p>
+
+<div class="grid">
+  <a class="card" href="sileo://source/https://0x27042.abhilashnigam.nl/">
+    <svg viewBox="0 0 56 56" aria-hidden="true"><rect width="56" height="56" rx="13" fill="#2b6cff"/><path d="M28 14v17m0 0l-7-7m7 7l7-7" stroke="#fff" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="17" y="37" width="22" height="4.2" rx="2.1" fill="#fff"/></svg>
+    <span>Sileo</span>
+  </a>
+  <a class="card" href="zbra://sources/add/https://0x27042.abhilashnigam.nl/">
+    <svg viewBox="0 0 56 56" aria-hidden="true"><rect width="56" height="56" rx="13" fill="#161616"/><g fill="#fff"><rect x="16" y="14" width="5" height="28" rx="2.5"/><rect x="25.5" y="14" width="5" height="28" rx="2.5"/><rect x="35" y="14" width="5" height="28" rx="2.5"/></g></svg>
+    <span>Zebra</span>
+  </a>
+  <a class="card" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://0x27042.abhilashnigam.nl/">
+    <svg viewBox="0 0 56 56" aria-hidden="true"><rect width="56" height="56" rx="13" fill="#7a5230"/><path d="M28 13l13 7-13 7-13-7z" fill="#e0b282"/><path d="M15 20.5v15.5l13 6.5V27z" fill="#bd8a4d"/><path d="M41 20.5v15.5l-13 6.5V27z" fill="#a4713a"/></svg>
+    <span>Cydia</span>
+  </a>
+  <a class="card" href="installer://add/https://0x27042.abhilashnigam.nl/">
+    <svg viewBox="0 0 56 56" aria-hidden="true"><rect width="56" height="56" rx="13" fill="#16a79b"/><path d="M28 15v16m0 0l-6-6m6 6l6-6" stroke="#fff" stroke-width="3.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 40h20" stroke="#fff" stroke-width="3.6" stroke-linecap="round"/></svg>
+    <span>Installer</span>
+  </a>
+</div>
+
+<p class="manual">Or add this URL manually in your package manager's sources:</p>
+<div class="url-row">
+  <code id="src">https://0x27042.abhilashnigam.nl/</code>
+  <button id="copy" onclick="navigator.clipboard.writeText('https://0x27042.abhilashnigam.nl/');this.textContent='Copied'">Copy</button>
+</div>
