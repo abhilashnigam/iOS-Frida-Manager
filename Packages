@@ -1,0 +1,80 @@
+Package: com.abhilashnigam.fridamanager
+Name: Frida Manager
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Description: Download, install, and control frida-server on jailbroken iOS.
+ Manages frida-server whether installed by this app or from a package
+ (Sileo / Zebra). Works on rootless and rootful jailbreaks.
+Maintainer: Abhilash Nigam <abhi.godfearing@ymail.com>
+Author: Abhilash Nigam <abhi.godfearing@ymail.com>
+Section: Development
+Depends: firmware (>= 15.0)
+Installed-Size: 1132
+Icon: file:///Applications/FridaManager.app/AppIcon60x60@2x.png
+Tag: role::hacker
+Filename: debs/com.abhilashnigam.fridamanager_1.0.1_iphoneos-arm64_rootful.deb
+Size: 396048
+MD5sum: af342780a5c6f444d050756ccd2b7be2
+SHA1: a14a92b67be8fb21f552fe35f53ce100b5a9e6b0
+SHA256: 46269e1436678db3b76825eda29dfa1eda8d8ee69700fcfc3ae3e2c383dede2d
+
+Package: com.abhilashnigam.fridamanager
+Name: Frida Manager
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Description: Download, install, and control frida-server on jailbroken iOS.
+ Manages frida-server whether installed by this app or from a package
+ (Sileo / Zebra). Works on rootless and rootful jailbreaks.
+Maintainer: Abhilash Nigam <abhi.godfearing@ymail.com>
+Author: Abhilash Nigam <abhi.godfearing@ymail.com>
+Section: Development
+Depends: firmware (>= 15.0)
+Installed-Size: 1132
+Icon: file:///var/jb/Applications/FridaManager.app/AppIcon60x60@2x.png
+Tag: role::hacker
+Filename: debs/com.abhilashnigam.fridamanager_1.0.1_iphoneos-arm64_rootless.deb
+Size: 396090
+MD5sum: 2aaf77f1076806139e594b44e3dbf1af
+SHA1: 7df04f300eb7a26169b8a234eb398996a7c56979
+SHA256: 6f40280942a43dce261d5fa7e229ad25df7b982e89ee68f24cb5e9fc62011ba4
+
+Package: com.abhilashnigam.fridamanager
+Name: Frida Manager
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Download, install, and control frida-server on jailbroken iOS.
+ Manages frida-server whether installed by this app or from a package
+ (Sileo / Zebra). Works on rootless and rootful jailbreaks.
+Maintainer: Abhilash Nigam <abhi.godfearing@ymail.com>
+Author: Abhilash Nigam <abhi.godfearing@ymail.com>
+Section: Development
+Depends: firmware (>= 15.0)
+Installed-Size: 1132
+Icon: file:///Applications/FridaManager.app/AppIcon60x60@2x.png
+Tag: role::hacker
+Filename: debs/com.abhilashnigam.fridamanager_1.0.1_iphoneos-arm_rootful.deb
+Size: 396048
+MD5sum: 75d74c4966fe6113e5d6752243db53a6
+SHA1: 5a1ca091c640f3162037e5f647645c74ae4f06ca
+SHA256: 427c8a32f9a94566234d355b105f25f8621cf9b2db1e8e307cdb76cb468fd017
+
+Package: com.abhilashnigam.fridamanager
+Name: Frida Manager
+Version: 1.0.1
+Architecture: iphoneos-arm
+Description: Download, install, and control frida-server on jailbroken iOS.
+ Manages frida-server whether installed by this app or from a package
+ (Sileo / Zebra). Works on rootless and rootful jailbreaks.
+Maintainer: Abhilash Nigam <abhi.godfearing@ymail.com>
+Author: Abhilash Nigam <abhi.godfearing@ymail.com>
+Section: Development
+Depends: firmware (>= 15.0)
+Installed-Size: 1132
+Icon: file:///var/jb/Applications/FridaManager.app/AppIcon60x60@2x.png
+Tag: role::hacker
+Filename: debs/com.abhilashnigam.fridamanager_1.0.1_iphoneos-arm_rootless.deb
+Size: 396082
+MD5sum: 8bcec3ed00ae1c32c0bf877b90a0f14c
+SHA1: eea3bfd052233d1cbffc1d52cd958fb0807a37a3
+SHA256: bea20f0879a563aba21180c1bab0ece79d1c6873c3fe8fefd46a4e6709120fd8
+
